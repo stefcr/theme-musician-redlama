@@ -1,3 +1,10 @@
+@font-face {
+    font-family: fairview;
+    src: url('../fonts/Fairview_Regular.otf');
+}
+
+/* nu ai fisier css de reset al browserului, toate browserele au defaulturi diferite la margin si padding... cauta normalize.css */
+
 html {
   font-size: 100%; }
 
@@ -17,7 +24,8 @@ img {
  =======Header==========
  */
 header {
-  background: transparent; }
+  background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
 
 .logo {
   display: block;
@@ -26,17 +34,30 @@ header {
 nav {
   display: block;
   text-align: center;
-  background-color: rgba(23, 23, 23, 0.7);
-  height: 24px; }
+  background-color: rgba(23, 23, 23, .5);
+  height: 24px;
+    /* esti paleta */
+    padding: 10px 0;
+    line-height: 26px;
+    font-family: fairview;
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: 100%;
+    position: absolute;
+    z-index: 9999; }
 
 .containerMenu {
   display: inline-block;
   width: 600px;
-  margin-left: 13%;
+  /* ce-i asta? margin-left: 13%; */
   word-spacing: 50px;
   color: #fafafa;
-  font-size: 16px;
-  text-decoration: none; }
+  text-decoration: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute; }
 
 .containerMenu a {
   color: #fafafa;
@@ -45,8 +66,8 @@ nav {
 .containerIcons {
   width: 200px;
   display: inline-block;
-  float: right;
-  word-spacing: 10px; }
+  word-spacing: 10px;
+    float: right; }
 
 /*
 ================firstSection==============
@@ -67,7 +88,7 @@ nav {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #fafafa;
-  font-family: Lato; }
+  font-family: Lato; } /* asta se pune la body si apoi individual unde vrei alt font de exemplu fairview le pui... */
 
 .sliderh2 {
   position: absolute;
@@ -77,5 +98,3 @@ nav {
   color: #fafafa;
   font-size: 16px;
   font-family: Lato; }
-
-/*# sourceMappingURL=styles.css.map */
