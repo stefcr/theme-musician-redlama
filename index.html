@@ -9,7 +9,11 @@
     <meta name="keywords" content="Redlama, band, concerts">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/slippry.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/video.css">
 
 
 
@@ -62,6 +66,71 @@
 </section>
 
 
+<section class="secondSection">
+    <div class="container">
+        <div class="mediaplayer">
+        <h2 class="media">MEDIA - ALBUMS</h2>
+        </div>
+        <div class="gridContainer">
+            <img class="firstImage" src="img/Cover.png">
+                <div class="gridContainerPhotos">
+                    <img class="firstImage" src="img/albumcover1.jpg">
+                    <img class="firstImage" src="img/albumcover2.jpg">
+                    <img class="firstImage" src="img/albumcover3.jpg">
+                    <img class="firstImage" src="img/albumcover4.jpg">
+                </div>
+        </div>
+        <h3>Preview of the new album Motions</h3>
+
+        <div id="player">
+            <!-- <div id="tiempo" class="display"></div> -->
+            <audio id="cancion"></audio>
+            <div id="screen" class="screen"></div>
+
+
+            <div class="botonera">
+                <button class="play" onClick="play()"><i class="fa fa-play" aria-hidden="true"></i></button>
+
+                <button class="stop" onClick="stop()"><i class="fa fa-stop" aria-hidden="true"></i></button>
+
+                <button class="pause" onClick="pause()"><i class="fa fa-pause" aria-hidden="true"></i></button>
+
+                <button class="prev" onClick="prev()"><i class="fa fa-fast-backward" aria-hidden="true"></i></button>
+
+                <button class="next" onClick="next()"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+
+                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1" >
+
+            </div>
+            <!-- FIN botonera -->
+
+            <div id="list"></div>
+            <i id="botonLista"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="thirdSection">
+    <div class="container">
+        <div class="video">
+        <video id="myVideo">
+            <source src="video/Red%20Lama%20-%20Mirrors%20(Astral%20TV%20cover)%20@GENKLANG%20(youtubemp4.to).mp4">
+
+        </video>
+        <div id="videoControlsBar">
+            <button id="playPauseBtn">Play</button>
+            <input id="seekSlider" type="range" min="0" max="100" value="0" step="1">
+        </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 
 
 
@@ -69,6 +138,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/slippry.min.js"></script>
-
+<script src="js/player.js"></script>
+<script src="js/Video.js"></script>
 </body>
 </html>

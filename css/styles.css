@@ -9,14 +9,18 @@ html {
   font-size: 100%; }
 
 body {
-  background-color: #171717; }
+  background-color: #171717;
+  font-family: Lato;
+  color: #fafafa;
+}
+
 
 img {
   max-width: 100%;
   height: auto; }
 
 .container {
-  width: 960px;
+  width: 1040px;
   height: auto;
   margin: 0 auto; }
 
@@ -88,7 +92,7 @@ nav {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #fafafa;
-  font-family: Lato; } /* asta se pune la body si apoi individual unde vrei alt font de exemplu fairview le pui... */
+   }
 
 .sliderh2 {
   position: absolute;
@@ -97,4 +101,47 @@ nav {
   z-index: 4;
   color: #fafafa;
   font-size: 16px;
-  font-family: Lato; }
+  }
+
+/*
+==================secondSection================
+ */
+
+.secondSection{
+  height: auto;
+  margin: 0 auto;
+  background-image: url("../img/bg-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.mediaplayer{
+
+  padding-top: 10%;
+
+}
+.media{
+  background-color: #171717;
+  padding: 20px;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #1d1d1d;
+}
+
+.gridContainerPhotos{
+  display: grid;
+  grid-template-columns: 180px 180px;
+  grid-template-rows: 50% 50%;
+
+  justify-content: end;
+}
+
+.gridContainerPhotos img{
+  width: 160px;
+  height: 160px;
+}
