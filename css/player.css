@@ -1,0 +1,79 @@
+
+
+#player {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 280px;
+    max-width: 900px;
+    min-height: 100px;
+    background-color: transparent;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px grey;
+    transition: all 1s linear; /*No esta teniendo efecto??? */
+}
+
+#screen {
+    width: 100%;
+    margin: 20px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #222;
+    font-family: 'Iceland', cursive, 'Share Tech Mono', monospace;
+    font-size: 25px;
+    color: #0f0;
+    transition: all 1s linear; /*No esta teniendo efecto??? */
+}
+
+/*.botonera {} */
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #666;
+    /* Gris satánico T_T */
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    font-family: 'Iceland', cursive, 'Share Tech Mono', monospace;
+    width: 100%;
+    max-height: 400px;
+    background: #222;
+    margin: 10px;
+    overflow-y: scroll;
+    color: green;
+    transition: all 1s linear;
+}
+
+
+
+
+#list li:hover{
+    color: #bbb;
+    cursor: pointer;
+}
+#list li.selected{
+    background-color: #333;
+    color: #fff;
+}
+
+#volumeslider{
+    width: 100px;
+}
