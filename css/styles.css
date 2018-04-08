@@ -117,8 +117,7 @@ nav {
 }
 
 
-.mediaplayer{
-
+.background{
   padding-top: 10%;
 
 }
@@ -145,3 +144,20 @@ nav {
   width: 160px;
   height: 160px;
 }
+
+
+
+ .nextbtn{
+   display: inline-block;
+   width: 50px;
+  float: right;
+ }
+ .nrPage{
+   display: inline-block;
+   width: 100px;
+
+
+ }
+ .backgroundColor{
+   background-color: #1b1b1b;
+ }

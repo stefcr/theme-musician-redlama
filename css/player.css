@@ -1,4 +1,7 @@
-
+#playButton img{
+    width: 10px;
+    height: 10px;
+}
 
 #player {
     display: flex;
@@ -10,11 +13,11 @@
     max-width: 900px;
     min-height: 100px;
     background-color: transparent;
-    border: solid 1px #ccc;
-    border-radius: 8px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 5px 5px 10px grey;
+
+
+
     transition: all 1s linear; /*No esta teniendo efecto??? */
 }
 
@@ -35,35 +38,39 @@
 /*.botonera {} */
 
 button {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: #fff;
-    color: #666;
-    /* Gris satánico T_T */
+    width: 100px;
+    height: 100px;
+    border: 0;
+    position:absolute;
+    display: block;
+    z-index: 100;
+    margin-left: 150px;
+    margin-top: 100px;
 }
 
-button:hover {
-    background-color: #ccc;
-}
+
+
 
 #list {
     display: grid;
+    grid-column-gap: 50px;
     grid-template-columns: 50% 50%;
     list-style-type: none;
-    font-family: 'Iceland', cursive, 'Share Tech Mono', monospace;
     width: 100%;
-    max-height: 400px;
-    background: #222;
+    max-height: 500px;
+    background: #171717;
     margin: 10px;
-    overflow-y: scroll;
-    color: green;
-    transition: all 1s linear;
+    overflow-y: hidden;
+    color: #fafafa;
+    letter-spacing: 2px;
+    word-spacing: 0.2px;
+overflow-x: hidden;
 }
 
-
-
+#list li{
+    padding-top: 15px;
+    text-align: left;
+}
 
 #list li:hover{
     color: #bbb;
@@ -73,7 +80,31 @@ button:hover {
     background-color: #333;
     color: #fff;
 }
-
-#volumeslider{
-    width: 100px;
+#list li:nth-child(odd){
+    padding-left: 5px;
 }
+
+
+#list li:nth-child(1){
+    background: #181818;
+}
+#list li:nth-child(2){
+    background: #181818;
+}
+#list li:nth-child(3){
+    background: #1b1b1b;
+}
+#list li:nth-child(4){
+    background: #1b1b1b;
+}
+#list li:nth-child(5){
+    background: #181818;
+}
+#list li:nth-child(6){
+    background: #181818;
+}
+#list li:nth-child(7){
+    background: #1b1b1b;
+}
+
+

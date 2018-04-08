@@ -68,10 +68,15 @@
 
 <section class="secondSection">
     <div class="container">
-        <div class="mediaplayer">
+
+        <div class="background">
+            <div class="backgroundColor">
         <h2 class="media">MEDIA - ALBUMS</h2>
-        </div>
+
+
+
         <div class="gridContainer">
+            <button id="playButton" class="play" onClick="play()"></button>
             <img class="firstImage" src="img/Cover.png">
                 <div class="gridContainerPhotos">
                     <img class="firstImage" src="img/albumcover1.jpg">
@@ -79,52 +84,45 @@
                     <img class="firstImage" src="img/albumcover3.jpg">
                     <img class="firstImage" src="img/albumcover4.jpg">
                 </div>
+
+
         </div>
         <h3>Preview of the new album Motions</h3>
 
         <div id="player">
-            <!-- <div id="tiempo" class="display"></div> -->
-            <audio id="cancion"></audio>
+
+            <audio id="music"></audio>
             <div id="screen" class="screen"></div>
 
 
-            <div class="botonera">
-                <button class="play" onClick="play()"><i class="fa fa-play" aria-hidden="true"></i></button>
-
-                <button class="stop" onClick="stop()"><i class="fa fa-stop" aria-hidden="true"></i></button>
-
-                <button class="pause" onClick="pause()"><i class="fa fa-pause" aria-hidden="true"></i></button>
-
-                <button class="prev" onClick="prev()"><i class="fa fa-fast-backward" aria-hidden="true"></i></button>
-
-                <button class="next" onClick="next()"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
-
-                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1" >
-
-            </div>
-            <!-- FIN botonera -->
-
             <div id="list"></div>
             <i id="botonLista"></i>
-
         </div>
-
+        <div class="footernav">
+        <p class="nrPage">0-1 / 0-5</p>
+        <p class="nextbtn"> NEXT </p>
+        </div>
+            </div>
+        </div>
     </div>
+
+
 
 </section>
 
 <section class="thirdSection">
     <div class="container">
+        <div class="background">
+            <div class="backgroundColor">
+        <h2 class="media">MUSIC - LATEST VIDEO</h2>
+        </div>
+
         <div class="video">
-        <video id="myVideo">
+        <video id="myVideo" controls>
             <source src="video/Red%20Lama%20-%20Mirrors%20(Astral%20TV%20cover)%20@GENKLANG%20(youtubemp4.to).mp4">
 
         </video>
-        <div id="videoControlsBar">
-            <button id="playPauseBtn">Play</button>
-            <input id="seekSlider" type="range" min="0" max="100" value="0" step="1">
         </div>
-
         </div>
 
     </div>
@@ -138,7 +136,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/slippry.min.js"></script>
-<script src="js/player.js"></script>
 <script src="js/Video.js"></script>
 </body>
 </html>
