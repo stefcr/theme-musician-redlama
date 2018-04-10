@@ -7,11 +7,12 @@
     <meta name="description" content="RedLama - Musician Theme">
     <meta name="author" content="Barbulescu-Mihailescu Razvan, Tudosie Stefan Cristian">
     <meta name="keywords" content="Redlama, band, concerts">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/slippry.css">
-    <link rel="stylesheet" href="css/normalize.css">
+
     <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/video.css">
 
@@ -20,18 +21,18 @@
 </head>
 <body>
 
-<header>
+<header >
     <span class="logo">
         <img src="img/logo.png">
     </span> <!-- se foloseste div pentru ca este o proprietate prioritara nu span care e secundar -->
     <!-- <hr> asta nu are ce cauta aici -->
-    <nav>
+    <nav class="nav">
         <div class="containerMenu">
-           <a href="*">HOME</a>
-            <a href="*">PHOTOS</a>
-            <a href="*">MUSIC</a>
-            <a href="*">SHOP</a>
-           <a href="*">ABOUT</a>
+           <a href="#home" class="slide-selection">HOME</a>
+            <a href="#music123" class="slide-selection">MUSIC</a>
+            <a href="#video" class="slide-selection">VIDEO</a>
+            <a href="#shop" class="slide-selection">SHOP</a>
+           <a href="contact" class="slide-selection">CONTACT</a>
         </div>
         <div class="containerIcons">
         <img src="img/fb.png">
@@ -43,30 +44,39 @@
     </nav>
 </header>
 
-<section class="firstSection">
+<section class="firstSection" id="home">
   <ul id="slippry-demo">
       <li>
           <a href="#slide1"><img src="img/slider-bg.png" class="sliderimg"></a>
           <div class="container">
           <h1 class="sliderh1">New album MOTIONS is out now!<br>
               Listen to it at your favorite streaming service.</h1>
-          <p class="sliderp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum reiciendis,
-              aperiam cumque  eius nostrum molestiasnon aspernatur vel! Explicabo<br> id accusantium molestias quae provident
-              officia totam ex aperiam,  deleniti ea est in! Ex, porro, quod!</p>
-              <h2 class="sliderh2">Read More -></h2>
+          <p class="sliderp"> The band maintains the same atmospheric, warm and rhythmically based soundscape, still strongly rooted in classic rock music,
+              as also heard on the first album. ‘Motions’ is a collection of songs that appears even sharper in regards to songwriting, arrangement and production compared to the debut.</p>
+              <h2 class="sliderh2"><a href="http://www.gfrock.dk/red-lama-motions/"> Read more -></a></h2>
           </div>
       <li>
-          <a href="#slide2"><img src="img/slider-bg.png" alt="ima23e1231ge"></a>
+          <a href="#slide2"><img src="img/slider-bg2.png"></a>
+      <h1 class="sliderh1">MAY  26 DIMMAN MUSIKFEST 2018 <br> IN HELSINGBORG SWEDEN </h1>
+      <p class="sliderp">
+          Dimman Musikfest is an ideal association that promotes rock music in the "underground" culture with Helsingborg as a base. By offering professional sound, urban atmosphere and the warmest reception at all of our music festivals, we hope that every visitor goes away with a strong desire for the next event.
+      </p>
+      <h2 class="sliderh2"><a href="https://www.facebook.com/events/262698984271331/"> Check the Event -></a></h2>
+
       </li>
       <li>
-          <a href="#slide3"><img src="img/slider-bg.png" alt="imag121e"></a>
+          <a href="#slide3"><img src="img/slider-bg3.png" alt="imag121e"></a>
+          <h1 class="sliderh1">The story about us. How it all started <br> and how we decided to become RED LAMA.</h1>
+          <p class="sliderp">During the infamous Spids Nøgenhat concert at the Pavillion stage at Roskilde Festval 2011, originated the idea to start a psychedelic rock band. Just one month after had five music loving friends from Svendborg and a great guy and bass player from Aalborg, got together and formed the band Red Lama.</p>
+
+          <h2 class="sliderh2"><a href="http://rockfreaks.net/gigs/1375"> Read more -></a></h2>
       </li>
   </ul>
 
 </section>
 
 
-<section class="secondSection">
+<section class="secondSection" id="music123">
     <div class="container">
 
         <div class="background">
@@ -87,6 +97,7 @@
 
 
         </div>
+                <img src="img/divider.png" class="divider">
         <h3>Preview of the new album Motions</h3>
 
         <div id="player">
@@ -100,7 +111,7 @@
         </div>
         <div class="footernav">
         <p class="nrPage">0-1 / 0-5</p>
-        <p class="nextbtn"> NEXT </p>
+        <p class="nextbtn"> NEXT → </p>
         </div>
             </div>
         </div>
@@ -110,12 +121,12 @@
 
 </section>
 
-<section class="thirdSection">
+<section class="thirdSection" id="video">
     <div class="container">
         <div class="background">
             <div class="backgroundColor">
         <h2 class="media">MUSIC - LATEST VIDEO</h2>
-        </div>
+
 
         <div class="video">
         <video id="myVideo" controls>
@@ -124,9 +135,58 @@
         </video>
         </div>
         </div>
+        </div>
 
     </div>
 </section>
+
+<section class="fourthSection" id="shop">
+    <div class="container">
+        <div class="background">
+        <h2 class="media"> GET YOUR TICKETS NOW</h2>
+        <p class="ticketsP"> An extraordinarily intense and mesmerizing display of tribal neo-psych that will surely be remembered as one of the best concerts this year.
+            Make sure that you get your ticket in time! Do not miss this experience!
+        </p>
+       <div class="ticketsGrid">
+           <a href="https://www.facebook.com/modularfestival/?fref=mentions"><img src="img/ticket2.png"></a>
+           <a href="https://www.facebook.com/events/262698984271331/"><img src="img/ticket1.png"></a>
+           <a href="https://www.facebook.com/events/553772264991187/"><img src="img/ticket3.png"></a>
+           <a href="https://www.facebook.com/events/522431981475709/"><img src="img/ticket4.png"></a>
+           <p>Modular Festival  <br>1 June 2018</p>
+           <p>Dimman MusikFest <br>26 May- 27 May 2018</p>
+           <p>RED LAMA - support: Eerie Glue - Pumpehuset <br> 23 February 2018</p>
+           <p>Lyttesession og pladereception<br>21 February 2018</p>
+
+       </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="background">
+        <div class="backgroundFooter">
+            <div class="container">
+                <div class="gridFooter">
+                    <img src="img/logofooter.png" class="imgFooter">
+                     <div class="gridFooterItems">
+                         <h3 class="mainItems">Contact us</h3>
+                         <h3 class="mainItems"> Get social</h3>
+                         <h3 class="mainItems">Meta</h3>
+                         <h4 class="elements"><a href="tel:+4512345678">+45 12 34 56 78</a></h4>
+                         <h4 class="elements"><a href="https://www.facebook.com/redlamadk/">Facebook</a></h4>
+                         <h4 class="elements">Log in</h4>
+                         <h4 class="elements"><a href="mailto:red_lama@hotmail.com">red_lama@hotmail.com</a></h4>
+                         <h4 class="elements"><a href="https://www.instagram.com/red_lama_band/">Instagram</a></h4>
+                         <h4 class="elements">Register</h4>
+                         <h4></h4>
+                         <h4 class="elements"><a href="https://www.youtube.com/channel/UCj4KwcG20U4T4DSUkHpZSng"> Youtube</a></h4>
+                    </div>
+                    <h3 class="copyright">Copyright 2018. MMD 2nd semester EASJ, K.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
@@ -136,6 +196,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/slippry.min.js"></script>
-<script src="js/Video.js"></script>
+<script src="js/playermp3.js"></script>
+<script src="js/Sticky.js"></script>
 </body>
 </html>

@@ -1,9 +1,13 @@
 var songs = [
-    "music/WolfieRaps - Check the Statistics Feat. Ricegum (Official Music Video) (Big Shaq Diss Track).mp3",
-    "http://scummbar.com/mi2/MI1-CD/14%20-%20Monkey%20Island.mp3",
-    "http://scummbar.com/mi2/MI1-CD/14%20-%20Monkey%20Island.mp3",
-    "http://scummbar.com/mi2/MI1-CD/14%20-%20Monkey%20Island.mp3",
-    "http://scummbar.com/mi2/MI2-CD1/01%20-%20Opening%20Themes%20&%20Introduction.mp3"
+   "music/01 - Perfect Strangers.wav",
+    "music/02 - Awakening (feat. Bjonko).wav",
+    "music/03 - Post Optimism.wav",
+    "music/04 - Have a Great Today.wav",
+    "music/05 - Come What May.wav",
+    "music/06 - Fular.wav",
+    "music/07 - Wave.wav",
+    "music/08 - Elements I.wav",
+    "music/09 - Elements II.wav"
 ]; //Here we put our music
 
 var currentSong = 0; //Actual Song
@@ -38,7 +42,7 @@ function cleanName(text) {
     var name = decodeURIComponent(text);
     var pos = name.lastIndexOf("/");
     var name = name.substring(pos + 1);
-    return name.replace(".mp3", "");
+    return name.replace(".wav", "");
 }
 
 function playListItem(ee){

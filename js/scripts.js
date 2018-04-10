@@ -1,7 +1,19 @@
 jQuery(document).ready(function(){
     jQuery('#slippry-demo').slippry()
-
     /*slider*/
+
+    $('.slide-selection').click(function (e) {
+        var linkref = $(this) .attr('href');
+
+        $('html, body').animate({
+            scrollTop:$(linkref).offset().top
+
+        },1000);
+
+        e.preventDefault()
+    });
+    /* SmoothScroll */
+
 
 });
 mp3 = document.getElementById("cancion");
@@ -19,4 +31,7 @@ function playPause() {
         playbtn.innerHTML = "Play";
     }
 }
+
+
+
 

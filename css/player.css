@@ -16,9 +16,6 @@
     padding: 20px;
     margin: 20px;
 
-
-
-    transition: all 1s linear; /*No esta teniendo efecto??? */
 }
 
 #screen {
@@ -29,13 +26,13 @@
     border-radius: 3px;
     padding: 5px;
     background-color: #222;
-    font-family: 'Iceland', cursive, 'Share Tech Mono', monospace;
     font-size: 25px;
-    color: #0f0;
-    transition: all 1s linear; /*No esta teniendo efecto??? */
+    color: #fafafa;
+    transition: all 1s linear;
+    letter-spacing: 2px;
+    word-spacing: 0.2px;
 }
 
-/*.botonera {} */
 
 button {
     width: 100px;
@@ -61,10 +58,10 @@ button {
     background: #171717;
     margin: 10px;
     overflow-y: hidden;
-    color: #fafafa;
+    color: #7e7d7d;
     letter-spacing: 2px;
     word-spacing: 0.2px;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 #list li{
@@ -73,7 +70,7 @@ overflow-x: hidden;
 }
 
 #list li:hover{
-    color: #bbb;
+    color: #fff;
     cursor: pointer;
 }
 #list li.selected{

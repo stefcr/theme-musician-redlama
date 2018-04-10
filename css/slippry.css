@@ -60,7 +60,7 @@
             transform: translateY(-20%) translateX(-10%); } }
 /* added to the original element calling slippry */
 .sy-box.sy-loading {
-  background: url("/images/sy-loader.gif") 50% 50% no-repeat;
+  background: url("/img/sy-loader.gif") 50% 50% no-repeat;
   -webkit-background-size: 32px 32px;
           background-size: 32px;
   min-height: 40px; }
@@ -183,7 +183,7 @@
         outline: none; }
       .sy-controls li a:after {
         content: "";
-        background-image: url("/images/arrows.svg");
+        background-image: url("../img/arrows.svg");
         background-repeat: no-repeat;
         -webkit-background-size: cover;
                 background-size: cover;
@@ -226,7 +226,7 @@
     padding: 0.4em 1em;
     border-radius: 1.2em; }
     .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
-      color: #e24b70;
+      color: #fafafa;
       font-weight: 600;
       text-decoration: none; }
     .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
@@ -257,12 +257,13 @@
     margin: 0 1em 0 0;
     border-radius: 50%; }
     .sy-pager li.sy-active a {
-      background-color: #e24b70; }
+      background-color: #fafafa; }
     .sy-pager li a {
       width: 100%;
       height: 100%;
       display: block;
-      background-color: #ccc;
+      background-color: transparent;
+      border: 2px solid #fafafa;
       text-indent: -9999px;
       -webkit-background-size: 2em 2em;
               background-size: 2em;

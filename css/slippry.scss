@@ -12,14 +12,14 @@
  * Released under the MIT license - http://opensource.org/licenses/MIT
  */
 
-$color_high: #e24b70 !default;     // highlight colour
+$color_high: #fafafa !default;     // highlight colour
 $color_gray: #ccc !default;        // neutral colour
-$controls_size: 2.8em !default;    // size of the next/ prev buttons
+$controls_size: 3em !default;    // size of the next/ prev buttons
 $pager_size: 1.2em !default;       // size of the pager bubbles
 $trans_ease: ease !default;        // easing for the transitions
 $mobile_break: 600px !default;     // breakpoint to use some special mobile styling
-$spinner_url: '/images/sy-loader.gif' !default;
-$arrows_url: '/images/arrows.svg' !default;
+$spinner_url: '/img/sy-loader.gif' !default;
+$arrows_url: '/img/arrows.svg' !default;
 
 @mixin animation ($animation) {
   animation-name: $animation;
@@ -180,7 +180,7 @@ $arrows_url: '/images/arrows.svg' !default;
       }
       &:after {
         content: "";
-        background-image: url($arrows_url);
+        background-image: url($arrows_url=);
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
